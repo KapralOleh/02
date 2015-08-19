@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h2 {
+			text-align: center;
+		}
+		canvas {
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<h2>Video</h2>
+	<video controls width="600px">
+		<source src="test.mp4">
+	</video>
+	<h2>Audio</h2>
+	<audio src="Kalimba.mp3" controls></audio>
+	<h2>Image</h2>
+	<figure>
+		<img src="https://bit.ly/fcc-relaxing-cat" alt="cat">
+	<figcaption>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet delectus nihil labore ducimus, sapiente, maxime, voluptates veniam quibusdam hic voluptatem totam debitis recusandae esse, illum id laborum! A officia, eum!
+	</figcaption>
+	</figure>
+	<h2>Canvas</h2>
+	<canvas id="myCanvas" width="300px" height="300px"></canvas>
+	<h2>Time</h2>
+	<time >1957-10-04</time></p>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext("2d")
+		context.beginPath();
+		context.moveTo(100,150);
+		context.lineTo(250,75);
+		context.lineTo(125,30);
+		context.closePath();
+		context.lineWidth = 5;
+		context.stroke();
+		context.fillStyle = "black";
+		context.fill();
+	</script>
+</body>
+</html>
